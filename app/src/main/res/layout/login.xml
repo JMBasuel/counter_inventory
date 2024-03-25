@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8D8D8"
+    tools:context="ui.Login">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:ignore="UselessParent">
+
+        <Spinner
+            android:id="@+id/spn_Level"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="5dp"
+            android:background="@drawable/spinner"
+            android:layout_centerHorizontal="true"
+            android:entries="@array/loginLevel" />
+
+        <EditText
+            android:id="@+id/edt_Username"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/spn_Level"
+            android:layout_marginTop="25dp"
+            android:autofillHints=""
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textSize="20sp"
+            android:visibility="visible"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/tv_UserError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_Username"
+            android:paddingStart="10dp"
+            android:paddingEnd="1dp"
+            android:textColor="#FF0000"
+            android:textSize="11sp" />
+
+        <EditText
+            android:id="@+id/edt_Password"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/tv_UserError"
+            android:layout_marginTop="15dp"
+            android:autofillHints=""
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textSize="20sp"
+            android:visibility="visible"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/tv_PassError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_Password"
+            android:paddingStart="10dp"
+            android:paddingEnd="1dp"
+            android:textColor="#FF0000"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btn_Login"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_PassError"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button"
+            android:stateListAnimator="@null"
+            android:text="@string/login"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

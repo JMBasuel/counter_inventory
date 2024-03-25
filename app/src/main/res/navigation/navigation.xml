@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.kfccorp.kfcstore.ui.Login"
+        android:label="Login" >
+        <action
+            android:id="@+id/action_login_to_counter"
+            app:destination="@id/counter" />
+        <action
+            android:id="@+id/action_login_to_management"
+            app:destination="@id/management" />
+    </fragment>
+    <fragment
+        android:id="@+id/counter"
+        android:name="com.kfccorp.kfcstore.ui.Counter"
+        android:label="Counter" >
+        <action
+            android:id="@+id/action_counter_to_order"
+            app:destination="@id/order" />
+    </fragment>
+    <fragment
+        android:id="@+id/management"
+        android:name="com.kfccorp.kfcstore.ui.Management"
+        android:label="Management" >
+        <action
+            android:id="@+id/action_management_to_inventory"
+            app:destination="@id/inventory" />
+        <action
+            android:id="@+id/action_management_to_report"
+            app:destination="@id/report" />
+    </fragment>
+    <fragment
+        android:id="@+id/order"
+        android:name="com.kfccorp.kfcstore.ui.Order"
+        android:label="order"
+        tools:layout="@layout/order" />
+    <fragment
+        android:id="@+id/inventory"
+        android:name="com.kfccorp.kfcstore.ui.Inventory"
+        android:label="inventory"
+        tools:layout="@layout/inventory" />
+    <fragment
+        android:id="@+id/report"
+        android:name="com.kfccorp.kfcstore.ui.Report"
+        android:label="report"
+        tools:layout="@layout/report" />
+</navigation>

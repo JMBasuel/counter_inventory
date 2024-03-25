@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "722434605320",
+    "firebase_url": "https://kfc-database-b68fa-default-rtdb.firebaseio.com",
+    "project_id": "kfc-database-b68fa",
+    "storage_bucket": "kfc-database-b68fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722434605320:android:f98f65ea1ed16f3d4d6cbd",
+        "android_client_info": {
+          "package_name": "com.example.kfcstore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj_w_QzPZjlZO8sv8Rrr9vY9kH7CHJqVU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722434605320:android:498e13589dbcd25e4d6cbd",
+        "android_client_info": {
+          "package_name": "com.kfccorp.kfcorder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj_w_QzPZjlZO8sv8Rrr9vY9kH7CHJqVU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722434605320:android:4969a168b3e181104d6cbd",
+        "android_client_info": {
+          "package_name": "com.kfccorp.kfcstore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj_w_QzPZjlZO8sv8Rrr9vY9kH7CHJqVU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
